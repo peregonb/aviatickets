@@ -16,6 +16,7 @@
 
 
 
+
 /* Medium Devices, Desktops */
 
 @media only screen and (max-width: 991px) {
@@ -107,20 +108,21 @@
     select#s2 {
         border-right: none;
     }
-    [type="radio"]:checked + label, [type="radio"]:not(:checked) + label {
-margin-right: 0;
+    [type="radio"]:checked+label,
+    [type="radio"]:not(:checked)+label {
+        margin-right: 0;
+    }
+    .form-content-direction {
+        justify-content: space-between;
+    }
+    .form-content-main-submit-button {
+        width: 20%;
+    }
+    .form-content-main-submit-checkbox-row {
+        width: 80%;
+    }
+}
 
-}
-.form-content-direction {
-    justify-content: space-between;
-}
-.form-content-main-submit-button {
-    width: 20%;
-}
-.form-content-main-submit-checkbox-row {
-    width: 80%;
-}
-}
 
 
 
@@ -128,17 +130,18 @@ margin-right: 0;
 /* Small Devices, Tablets */
 
 @media only screen and (max-width: 768px) {
-    [type="radio"]:checked + label, [type="radio"]:not(:checked) + label {
-    font-size: 15px;
-}
-.styled-checkbox + label {
-    width: 100%;
-}
-.form-content-main-submit-button {
-    width: 20%;
-    padding: 20px 0;
-    align-items: flex-end;
-}
+    [type="radio"]:checked+label,
+    [type="radio"]:not(:checked)+label {
+        font-size: 15px;
+    }
+    .styled-checkbox+label {
+        width: 100%;
+    }
+    .form-content-main-submit-button {
+        width: 20%;
+        padding: 20px 0;
+        align-items: flex-end;
+    }
 }
 
 @media only screen and (max-width: 520px) {
@@ -157,28 +160,31 @@ margin-right: 0;
     .form-content-main-labels:nth-child(5) {
         width: 100%;
     }
-        select#s1 {
+    select#s1 {
         border-right: none;
     }
-        select#s4 {
+    select#s4 {
         border-right: none;
     }
-    [type="radio"]:checked + label, [type="radio"]:not(:checked) + label {
-    font-size: 15px;
-    font-weight: 400;
-    margin-right: 25px;
-    text-align: center;
-}
-[type="radio"]:checked + label:before, [type="radio"]:not(:checked) + label:before {
-    content: '';
-    position: absolute;
-    top: 10px;
-}
-[type="radio"]:checked + label:after, [type="radio"]:not(:checked) + label:after {
-    content: '';
-    position: absolute;
-    top: 15px;
-}
+    [type="radio"]:checked+label,
+    [type="radio"]:not(:checked)+label {
+        font-size: 15px;
+        font-weight: 400;
+        margin-right: 25px;
+        text-align: center;
+    }
+    [type="radio"]:checked+label:before,
+    [type="radio"]:not(:checked)+label:before {
+        content: '';
+        position: absolute;
+        top: 10px;
+    }
+    [type="radio"]:checked+label:after,
+    [type="radio"]:not(:checked)+label:after {
+        content: '';
+        position: absolute;
+        top: 15px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -190,42 +196,51 @@ margin-right: 0;
         width: 100%;
     }
     .form-content-direction {
-    flex-flow: row wrap;
-    flex-direction: column;
-    align-items: flex-start;
+        flex-flow: row wrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    [type="radio"]:checked+label,
+    [type="radio"]:not(:checked)+label {
+        font-size: 15px;
+        font-weight: 400;
+        margin-right: 25px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    [type="radio"]:checked+label:before,
+    [type="radio"]:not(:checked)+label:before {
+        content: '';
+        position: absolute;
+        top: 1px;
+    }
+    [type="radio"]:checked+label:after,
+    [type="radio"]:not(:checked)+label:after {
+        content: '';
+        position: absolute;
+        top: 6px;
+    }
+    .form-content-main-submit-checkbox-row {
+        width: 100%;
+    }
+    .form-content-main-submit-button {
+        width: 100%;
+        padding-top: 0;
+        align-items: center;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+    }
 }
-[type="radio"]:checked + label, [type="radio"]:not(:checked) + label {
-    font-size: 15px;
-    font-weight: 400;
-    margin-right: 25px;
-    text-align: center;
-    margin-bottom: 5px;
-}
-[type="radio"]:checked + label:before, [type="radio"]:not(:checked) + label:before {
-    content: '';
-    position: absolute;
-    top: 1px;
-}
-[type="radio"]:checked + label:after, [type="radio"]:not(:checked) + label:after {
-    content: '';
-    position: absolute;
-    top: 6px;
-}
-.form-content-main-submit-checkbox-row {
-    width: 100%;
-}
-.form-content-main-submit-button {
-    width: 100%;
-    padding-top: 0;
-    align-items: center;
-    justify-content: flex-start;
-    padding-bottom: 20px;
-}
-}
+
 
 
 
 
 /* Custom, iPhone Retina */
 
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 320px) {
+
+    .index-bg {
+        height: 510px;
+    }
+}

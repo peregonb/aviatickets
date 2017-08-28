@@ -285,7 +285,6 @@ a.link-brand {
     font-weight: 700;
     line-height: 68px;
     color: white;
-    font-family: "Open Sans";
 }
 .index-description {
     font-size: 19px;
@@ -316,7 +315,6 @@ a.link-brand {
     line-height: 20px;
     display: inline-block;
     color: #ff8102;
-    font-family: "Open Sans";
     font-size: 17px;
     font-weight: 400;
     margin-right: 25px;
@@ -427,7 +425,6 @@ select#s5 {
     height: 50px;
     outline: none;
     color: #2f60eb;
-    font-family: "Open Sans";
     font-size: 18px;
     font-weight: 400;
     padding: 5px 10px;
@@ -504,7 +501,6 @@ select#s5 {
     border: none;
     outline: none;
     color: white;
-    font-family: "Open Sans";
     font-size: 17px;
     font-weight: 700;
     line-height: 36px;

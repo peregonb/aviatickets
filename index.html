@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/media.css" />
 </head>
 
-<body>
+<body style="overflow-x:hidden;">
     <header>
         <div class="container-header container">
             <a class="link-brand" href="index.html">
@@ -40,13 +40,72 @@
             </div>
         </div>
     </header>
-
     <div class="index-bg container-fluid">
         <div class="container index-content">
             <div class="index-header">Авиабилеты</div>
-            <div class="index-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet.</div>
+            <div class="index-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</div>
+        </div>
+    </div>
+    <div class="block-form container-fluid">
+        <div class="block-form-content container">
+            <form action="">
+                <div class="form-content-direction">
+                    <input class="radiobutton" type="radio" name="1" id="1" checked="checked">
+                    <label for="1">Туда-обратно</label>
+                    <input class="radiobutton" type="radio" name="2" id="2">
+                    <label for="2">В одну сторону</label>
+                    <input class="radiobutton" type="radio" name="3" id="3">
+                    <label for="3">Сложный маршрут</label>
+                </div>
+                <div class="form-content-main-inputs">
+                    <div class="form-content-main-labels">
+                        <div class="form-content-main-label">Откуда</div>
+                        <select name="selectbar" id="s1" class="form-content-main-input-single">
+                            <option value="s1o1">Киев (Любой)</option>
+                        </select>
+                    </div>
+                    <div class="form-content-main-labels">
+                        <div class="form-content-main-label">Куда</div>
+                        <select name="selectbar" id="s2" class="form-content-main-input-single">
+                            <option value="s2o1">Пальма Майорка (PMI)</option>
+                        </select>
+                    </div>
+                    <div class="form-content-main-labels">
+                        <div class="form-content-main-label">Туда</div>
+                        <select name="selectbar" id="s3" class="form-content-main-input-single">
+                            <option value="s3o1">16.08.2017</option>
+                        </select>
+                    </div>
+                    <div class="form-content-main-labels">
+                        <div class="form-content-main-label">Обратно</div>
+                        <select name="selectbar" id="s4" class="form-content-main-input-single">
+                            <option value="s4o1">16.08.2017</option>
+                        </select>
+                    </div>
+                    <div class="form-content-main-labels">
+                        <div class="form-content-main-label">Класс обслуживания и пассажиры</div>
+                        <select name="selectbar" id="s5" class="form-content-main-input-single">
+                            <option value="s5o1">1 взрослый, Эконом</option>
+                            <option value="s5o2">2 взрослых, Эконом</option>
+                            <option value="s5o3">1 взрослый, Бизнес</option>
+                            <option value="s5o4">2 взрослых, Бизнес</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-content-main-submit-row">
+                    <div class="form-content-main-submit-checkbox-row">
+                        <input class="styled-checkbox" type="checkbox" name="c1" id="ch1" value="">
+                        <label for="ch1">Добавить аэропорты поблизости</label>
+                        <input class="styled-checkbox" type="checkbox" name="c2" id="ch2" value="">
+                        <label for="ch2">Добавить аэропорты поблизости</label>
+                        <input class="styled-checkbox" type="checkbox" name="c3" id="ch3" value="">
+                        <label for="ch3">Только рейсы без пересадок</label>
+                    </div>
+                    <div class="form-content-main-submit-button">
+                        <button>Найти</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
     <script src="libs/jquery/jquery-1.11.1.min.js"></script>

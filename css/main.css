@@ -25,7 +25,7 @@ body input:required:valid,
 body textarea:required:valid {}
 
 body {
-    font-family: "sans";
+font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     -webkit-transition: 300ms;
     -moz-transition: 300ms;

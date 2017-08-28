@@ -241,6 +241,6 @@
 @media only screen and (max-width: 320px) {
 
     .index-bg {
-        height: 480px;
+        height: 100vh;
     }
 }

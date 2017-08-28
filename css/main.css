@@ -400,6 +400,13 @@ select#s4 {
 }
 select#s5 {
     width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../img/ch_d.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 97%;
 }
 .form-content-main-labels:nth-child(1){
     width: 25%;

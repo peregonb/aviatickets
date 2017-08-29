@@ -273,6 +273,9 @@
     width: 100%;
     align-items: center;
 }
+.footer-icons > ul > li:nth-child(1) {
+    margin-left: 0;
+}
 }
 @media only screen and (max-width: 532px) {
     .popular-content-image {

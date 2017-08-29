@@ -260,6 +260,19 @@
     flex-flow: row wrap;
     background: url(../img/fm.png) 0% 11% no-repeat, url(../img/fm.png) 66% 11% no-repeat, url(../img/fm.png) 33% 82% no-repeat;
 }
+.footer-text {
+    width: 100%;
+    text-align: center;
+}
+.footer-icons {
+    width: 100%;
+    margin-top: 20px;
+}
+.footer-icons > ul {
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
 }
 @media only screen and (max-width: 532px) {
     .popular-content-image {
@@ -291,6 +304,7 @@
     background: url(../img/bg4.png) 10% 176% no-repeat, url(../img/bg5.png) 50% 135% no-repeat, url(../img/plane5.png) top right/18% no-repeat, url(../img/plane4.png) bottom left/18% no-repeat;
     height: auto;
 }
+
 }
 @media only screen and (max-width: 635px) {
     .footer-menu-tile {

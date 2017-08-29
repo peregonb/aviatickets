@@ -105,3 +105,35 @@ $('a[href^="#"]').click(function() {
     return false;
     e.preventDefault();
 });
+
+$(document).ready(function() {
+    $('#element-to-animate1').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeInDown',
+        offset: 100
+       });
+        $('#element-to-animate2').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeInUp',
+        offset: 100
+       });
+        $('#element-to-animate3').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeInUp',
+        offset: 100
+       });
+        $('#element-to-animate4').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeInUp',
+        offset: 100
+       });
+        $('#element-to-animate5').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeInUp',
+        offset: 100
+       });
+        $('#element-to-animate6').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeInUp',
+        offset: 100
+       });
+        $('#element-to-animate7').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeInUp',
+        offset: 100
+       });
+
+});

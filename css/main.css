@@ -25,7 +25,7 @@ body input:required:valid,
 body textarea:required:valid {}
 
 body {
-font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans', sans-serif !important;
     font-size: 16px;
     -webkit-transition: 300ms;
     -moz-transition: 300ms;
@@ -162,7 +162,6 @@ a {
     display: inline-flex;
     display: -webkit-inline-flex;
     color: black;
-    font-family: "sans";
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
@@ -741,4 +740,58 @@ select#s5 {
     font-weight: 400;
     line-height: 27px;
     text-align: left;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+.footer-text {
+    display: flex;
+    width: 60%;
+    color: #5c5c5c;
+    font-size: 15px;
+    justify-content: space-around;
+    font-weight: 400;
+}
+.footer-icons {
+    display: flex;
+    width: 40%;
+}
+.footer-text-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icons > ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    list-style: none;
+}
+.footer-icons > ul > li {
+    margin-left: 25px;
+}
+.footer-icons > ul > li:nth-child(3) {
+    margin-left: 20px;
+}
+footer {
+    padding: 25px 0;
+}
+.footer-icons > ul > li > a > img {
+    height: 25px;
+}
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
 }

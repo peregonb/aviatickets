@@ -419,7 +419,7 @@
 @media only screen and (max-width: 320px) {
 
     .index-bg {
-        height: 100vh;
+        height: 480px;
     }
     .popular-content-header {
     font-size: 30px;

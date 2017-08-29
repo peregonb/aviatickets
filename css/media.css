@@ -43,6 +43,13 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+    .services-block {
+    background: url(../img/bg4.png) 119% 25% no-repeat, url(../img/bg5.png) -12% 75% no-repeat, url(../img/plane5.png) bottom right/15% no-repeat, url(../img/plane4.png) top left/15% no-repeat;
+    height: auto;
+}
+.footer-menu-content {
+    background: url(../img/fm.png) 5% 30% no-repeat, url(../img/fm.png) 45.5% 30% no-repeat, url(../img/fm.png) 78% 30% no-repeat;
+}
 }
 
 
@@ -196,6 +203,16 @@
     padding: 0;
     height: 345px;
 }
+.services-block {
+    background: url(../img/bg4.png) 12% -15% no-repeat, url(../img/bg5.png) -14% 90% no-repeat, url(../img/plane5.png) top right/18% no-repeat, url(../img/plane4.png) bottom left/18% no-repeat;
+    height: auto;
+}
+.service-tile-description {
+    padding: 0 35px;
+}
+.footer-menu-content {
+    background: url(../img/fm.png) -2% 30% no-repeat, url(../img/fm.png) 44.5% 30% no-repeat, url(../img/fm.png) 79.5% 30% no-repeat;
+}
 }
 
 
@@ -226,7 +243,23 @@
         display: flex;
         justify-content: center;
     }
-
+.service-tile-description {
+    padding: 0;
+}
+.footer-menu-tile {
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 10px 0;
+    padding: 0;
+}
+.footer-menu-tile:nth-child(3) {
+    width: 100%;
+}
+.footer-menu-content {
+    flex-flow: row wrap;
+    background: url(../img/fm.png) 0% 11% no-repeat, url(../img/fm.png) 66% 11% no-repeat, url(../img/fm.png) 33% 82% no-repeat;
+}
 }
 @media only screen and (max-width: 532px) {
     .popular-content-image {
@@ -254,7 +287,22 @@
     font-size: 14px;
     font-weight: 400;
 }
-
+.services-block {
+    background: url(../img/bg4.png) 10% 176% no-repeat, url(../img/bg5.png) 50% 135% no-repeat, url(../img/plane5.png) top right/18% no-repeat, url(../img/plane4.png) bottom left/18% no-repeat;
+    height: auto;
+}
+}
+@media only screen and (max-width: 635px) {
+    .footer-menu-tile {
+    width: 100%;
+}
+.footer-menu-content {
+    flex-flow: row wrap;
+    background: url(../img/fm2.png) 31% 5% no-repeat, url(../img/fm2.png) 31% 47% no-repeat, url(../img/fm2.png) 31% 88% no-repeat;
+}
+.footer-menu-item {
+    font-size: 17px;
+}
 }
 @media only screen and (max-width: 520px) {
     .form-content-main-labels:nth-child(1) {

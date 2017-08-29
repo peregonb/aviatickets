@@ -530,7 +530,7 @@ select#s5 {
     height: auto;
     background-size: cover;
 }
-.container.popular-content {
+.popular-content {
     background-image: url(../img/plane2.png);
     height: 100%;
     background-repeat: no-repeat;
@@ -672,4 +672,73 @@ select#s5 {
 }
 .october-block{
     background-image: url(../img/bg3.png);
+}
+.october-content{
+    background-image: url(../img/plane3.png);
+    background-position: bottom right;
+}
+.services-block {
+    background: 
+    url(../img/bg4.png) 119% 37% no-repeat, 
+    url(../img/bg5.png) -12% 59% no-repeat, 
+    url(../img/plane5.png) bottom right/15% no-repeat, 
+    url(../img/plane4.png) top left/15% no-repeat;
+    height: auto;
+}
+.servicer-content {
+    height: auto;
+    padding: 80px 0 100px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+.service-tile-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service-tile-header {
+    color: #343434;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+}
+.service-tile-description {
+    font-size: 15px;
+    font-weight: 400;
+    color: #5c5c5c;
+    text-align: center;
+    margin-top: 10px;
+}
+.orange{
+    color: #ff8400 !important;
+}
+.service-tile {
+    margin-top: 20px;
+}
+.footer-menu-block.container-fluid {
+    background-color: #2f60eb;
+}
+.footer-menu-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: auto;
+}
+.footer-menu-content {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    background: url(../img/fm.png) 9% 30% no-repeat, url(../img/fm.png) 46.5% 30% no-repeat, url(../img/fm.png) 77.5% 30% no-repeat;
+}
+.footer-menu-item {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
 }

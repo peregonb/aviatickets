@@ -1,5 +1,19 @@
 $(document).ready(function() {
 
+var bodywidth = $('body').width();
+ if (bodywidth < 992) {
+    $('.btn').click(function(){
+        setTimeout(function() {
+            $('.header-menu').slideToggle({ top: 'toggle' });
+            $('.hamburger').toggleClass("is-active");
+        }, 300);
+    });
+ };
+
+
+
+
+
   $modal = $('.modal-frame');
 
 function enterNewConvo() {
@@ -21,7 +35,7 @@ $('.modal-overlay').click(function() {
   closeModal();
 })
 
-$('#close').click(function() {
+$('.modal-cross').click(function() {
     closeModal();
 })
 

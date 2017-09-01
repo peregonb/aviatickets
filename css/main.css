@@ -208,6 +208,7 @@ a {
 
 
 
+
 /* ALL */
 
 .row .three {
@@ -237,6 +238,7 @@ a {
 .hamburger {
     display: none;
 }
+
 
 
 
@@ -468,6 +470,7 @@ select#s5 {
 
 
 
+
 /*CHECKBOX START*/
 
 .styled-checkbox {
@@ -539,6 +542,7 @@ select#s5 {
     flex-flow: row wrap;
     padding: 15px 0px;
 }
+
 
 
 /*CHECKBOX END*/
@@ -890,6 +894,7 @@ footer {
 
 
 
+
 /* MODAL WINDOW*/
 
 .close {
@@ -902,6 +907,7 @@ footer {
     background: none;
     border: none;
 }
+
 
 
 
@@ -922,14 +928,14 @@ footer {
 .modal-body {
     top: 50%;
     left: 50%;
-    width: 500px;
-    border-radius: 3px;
+    width: 630px;
+    border-radius: 0;
     background: #FFF;
     position: fixed;
-    height: 400px;
-    margin-left: -250px;
+    height: 458px;
+    margin-left: -315px;
     z-index: 100;
-    margin-top: -200px;
+    margin-top: -229px;
 }
 
 
@@ -947,6 +953,7 @@ footer {
     transform: scale(.5);
     transition: .2s ease-in-out;
 }
+
 
 
 
@@ -978,6 +985,7 @@ footer {
     -o-transform: scale(.95);
     transform: scale(.95);
 }
+
 
 
 /**
@@ -1119,6 +1127,7 @@ footer {
 }
 
 
+
 /**
  *  Leave States
 */
@@ -1155,6 +1164,240 @@ footer {
     -o-transition: .15s ease-in-out;
     transform: scale(.95);
     transition: .15s ease-in-out;
+}
+
+.modal-header {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f60eb;
+    height: 60px;
+}
+
+.modal-cross {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 0;
+    right: 0;
+    background-image: url(../img/cross.png);
+    background-repeat: no-repeat;
+}
+
+.modal-cross {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 0;
+    right: 0;
+    background-image: url(../img/cross.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.blue {
+    color: #2f60eb !important;
+}
+
+.modal-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 317px;
+    flex-flow: row wrap;
+    padding: 25px 25px 25px 40px;
+}
+
+.modal-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    flex-flow: row wrap;
+    padding: 25px 40px 25px 25px;
+}
+
+.modal-left-header {
+    font-size: 16.5px;
+    font-weight: 600;
+    line-height: 18px;
+    width: 100%;
+}
+
+.modal-left-hr {
+    width: 70px;
+    border-top: 3px solid #2f60eb;
+    margin-top: 10px;
+}
+
+.modal-left-content {
+    color: #343434;
+    font-size: 12.7px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    margin-top: 5px;
+    line-height: 16px;
+}
+
+.modal-left-social-stack {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modal-left-social {
+    height: 36px;
+    width: 36px;
+    border-radius: 50px;
+    background-color: #2f60eb;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    cursor: pointer;
+}
+
+.modal-left-social:nth-child(1) {
+    background-image: url(../img/fb.svg);
+}
+
+.modal-left-social:nth-child(2) {
+    background-image: url(../img/ok.svg);
+}
+
+.modal-left-social:nth-child(3) {
+    background-image: url(../img/vk.svg);
+}
+
+form.modal-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.modal-label {
+    color: #5c5c5c !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    margin-top: 7px !important;
+}
+
+.modal-input {
+    border-radius: 5px;
+    border: 1px solid #5c5c5c;
+    height: 33px;
+    outline-style: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.modal-label-pass {
+    width: 50%;
+}
+
+.modal-label-pass:nth-child(2) {
+    text-align: right;
+    color: #ff8102;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.modal-label-pass-block {
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+.lfw {
+    font-weight: 500 !important;
+}
+
+.bfw {
+    font-weight: 600 !important;
+}
+
+.orange {
+    color: #ff8102 !important;
+}
+
+.cp {
+    cursor: pointer;
+}
+
+.modal-checkbox+label:before {
+    background: #b2afaf;
+    margin-right: 5px;
+    float: left;
+}
+
+.modal-checkbox+label {
+    width: 100%;
+    font-size: 11.7px !important;
+    line-height: 11px;
+}
+
+.bu {
+    color: #2f60eb;
+}
+
+.bu:hover {
+    text-decoration: underline;
+}
+
+.modal-footer {
+    height: 60px;
+    background: #2f60eb;
+    width: 315px;
+    position: relative;
+    left: -25px;
+    margin-top: 7px;
+    display: flex;
+    padding-left: 40px;
+    padding-right: 25px;
+    align-items: center;
+}
+
+.modal-footer-left {
+    top: 40px;
+    left: -40px;
+}
+
+.modal-footer-submit {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 50px;
+    padding: 8px 12px;
+    width: 100%;
+    outline: none;
+    background-image: url(../img/arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-position-x: 215px;
+}
+
+.modal-footer-right {
+    padding-left: 25px;
+    padding-right: 40px;
 }
 
 

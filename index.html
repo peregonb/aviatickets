@@ -269,9 +269,61 @@
     </footer>
     <div class="modal-frame">
   <div class="modal-body create-chat-input">
-    <div class="modal-inner">
-      <button id="close" class="close"><i class="fa fa-times"></i></button>
-      <p>I love sweet sweet content</p>
+    <div class="modal-header">Выполните вход или зарегистрируйтесь
+    </div>
+    <div class="modal-cross"></div>
+    <div class="modal-content">
+        <div class="modal-left">
+            <div class="modal-left-header">Войти через <br> <span class="blue">социальные сети</span></div>
+            <div class="modal-left-hr"></div>
+            <div class="modal-left-content">Это быстро, просто, и мы не будем <br>ничего публиковать, не спросив вас.</div>
+            <div class="modal-left-social-stack">
+                <div class="modal-left-social"></div>
+                <div class="modal-left-social"></div>
+                <div class="modal-left-social"></div>
+            </div>
+            <form action="" class="modal-form">
+                <label class="modal-label" for="login-si">Электронная почта</label>
+                <input class="modal-input" type="text" name="login-si" id="login-si">
+                <div class="modal-label-pass-block">
+                    <label class="modal-label modal-label-pass" for="pass-si">Пароль</label>
+                    <label class="modal-label modal-label-pass" for="pass-si">Забыли пароль?</label>
+                </div>
+                <input class="modal-input" type="password" name="pass-si" id="pass-si" required="required">
+                <div class="modal-footer modal-footer-left">
+                    <button type="submit" class="modal-footer-submit">Войти</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal-right">
+            <div class="modal-left-header modal-right-header">
+                <span class="lfw">Войти в ранее созданный</span><br> 
+                <span class="blue">личный кабинет</span>
+            </div>
+            <div class="modal-left-hr"></div>
+            <div class="modal-left-content">Нет аккаунта Логотип? 
+                <span class="orange cp">Зарегистрируйтесь</span><br>
+                <span class="bfw">прямо сейчас.</span>
+            </div>
+            <form action="" class="modal-form">
+                <label class="modal-label" for="login-si">Электронная почта</label>
+                <input class="modal-input" type="text" name="login-si" id="login-si">
+                <div class="modal-label-pass-block">
+                    <label class="modal-label modal-label-pass" for="pass-si">Пароль</label>
+                    <label class="modal-label modal-label-pass" for="pass-si">Забыли пароль?</label>
+                </div>
+                <input class="modal-input" type="password" name="pass-si" id="pass-si" required="required">
+                <label class="modal-label modal-label-pass" for="pass-si">Повторите пароль</label>
+                <input class="modal-input" type="password" name="pass-si" id="pass-si" required="required">
+                <input class="styled-checkbox modal-checkbox" type="checkbox" name="check" id="check" value="">
+                <label class="modal-label modal-labex-checkbox" for="check">Настоящим даю 
+                    <span class="bu">согласие на обработку моих персональных данных</span>
+                </label>
+                <div class="modal-footer modal-footer-right">
+                    <button type="submit" class="modal-footer-submit">Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
     </div>
   </div>
   <div class="modal-overlay"></div>

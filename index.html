@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="css/media.css" />
 </head>
 
-<body style="overflow-x:hidden;">
+<body style="overflow-x:hidden;" id="body">
     <header>
         <div class="container-header container">
-            <a class="link-brand" href="index.html">
+            <a class="link-brand" href="#body">
                 <div class="header-brand">
                     LOGO
                 </div>
@@ -29,9 +29,9 @@
                     <img src="./img/li1.svg">
                     <a href="#">Справка</a>
                 </li>
-                <li>
+                <li class="btn modal-popup">
                     <img src="./img/li2.svg">
-                    <a href="#">Личный кабинет</a>
+                    <a>Личный кабинет</a>
                 </li>
             </ul>
             <div class="hamburger" id="hamburger-1">
@@ -48,7 +48,7 @@
         </div>
     </div>
     <div class="block-form container-fluid">
-        <div id="element-to-animate2" class="block-form-content container">
+        <div class="block-form-content container">
             <form action="">
                 <div class="form-content-direction">
                     <input class="radiobutton" type="radio" name="1" id="1" checked="checked">
@@ -110,7 +110,7 @@
         </div>
     </div>
     <div class="container-fluid popular-block">
-        <div id="element-to-animate3" class="container popular-content">
+        <div class="container popular-content">
             <div class="popular-content-header">Популярные маршруты</div>
             <div class="popular-content-excerpt">
                 <div class="popular-content-excerpt-left">Август 2017</div>
@@ -156,7 +156,7 @@
         </div>
     </div>
     <div class="container-fluid popular-block october-block">
-        <div id="element-to-animate4" class="container popular-content october-content">
+        <div class="container popular-content october-content">
             <div class="popular-content-header">Предложения на октябрь</div>
             <div class="popular-content-excerpt">
                 <div class="popular-content-excerpt-right">Октябрь 2017</div>
@@ -201,7 +201,7 @@
         </div>
     </div>
     <div class="services-block container-fluid">
-        <div id="element-to-animate5" class="servicer-content container">
+        <div class="servicer-content container">
             <div class="service-tile col-md-3 col-xs-6 col-xxs-12">
                 <div class="service-tile-content">
                     <img src="./img/aa1.png" class="service-tile-img">
@@ -234,7 +234,7 @@
         </div>
     </div>
     <div class="footer-menu-block container-fluid">
-        <div id="element-to-animate6" class="footer-menu-content container">
+        <div class="footer-menu-content container">
             <div class="footer-menu-tile col-md-4">
                 <div class="footer-menu-item orange">Популярные маршруты</div>
                 <div class="footer-menu-item">Первый пример</div>
@@ -267,6 +267,15 @@
             </ul>
         </div>
     </footer>
+    <div class="modal-frame">
+  <div class="modal-body create-chat-input">
+    <div class="modal-inner">
+      <button id="close" class="close"><i class="fa fa-times"></i></button>
+      <p>I love sweet sweet content</p>
+    </div>
+  </div>
+  <div class="modal-overlay"></div>
+</div>
     <script src="libs/jquery/jquery-1.11.1.min.js"></script>
     <script src="js/vpcheker.js"></script>
     <script src="js/common.js"></script>

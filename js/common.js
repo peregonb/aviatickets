@@ -1,5 +1,37 @@
 $(document).ready(function() {
 
+  $modal = $('.modal-frame');
+
+function enterNewConvo() {
+  $('.create-chat-input').focus();
+}
+
+function closeModal() {
+    $modal.removeClass('active');
+    $modal.addClass('leave');
+}
+
+$('.modal-popup').click(function() {
+  $modal.toggleClass('active');
+  $modal.removeClass('leave');
+  enterNewConvo();
+})
+
+$('.modal-overlay').click(function() {
+  closeModal();
+})
+
+$('#close').click(function() {
+    closeModal();
+})
+
+  $(document).keyup(function(e) {
+    if(e.which === 27) {
+      closeModal();
+    }
+  })
+
+
 
     function scrollbarWidth() {
         var block = $('<div>').css({ 'height': '50px', 'width': '50px' }),
@@ -108,7 +140,7 @@ $('a[href^="#"]').click(function() {
 
 $(document).ready(function() {
     $('#element-to-animate1').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animated fadeInDown',
+        classToAdd: 'visible animated fadeInUp',
         offset: 100
        });
         $('#element-to-animate2').addClass("hidden").viewportChecker({

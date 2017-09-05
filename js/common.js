@@ -1,5 +1,11 @@
 $(document).ready(function() {
-
+var winwidth = $(window).outerWidth();
+        if(winwidth < 654 ){
+                $('.desktop-menu').css('display', 'none');
+        } 
+                else if(winwidth > 654 ){
+                $('.desktop-menu').css('display', 'flex');
+        }
 var bodywidth = $('body').width();
  if (bodywidth < 992) {
     $('.btn').click(function(){
@@ -87,6 +93,16 @@ $('.modal-cross').click(function() {
         }
         else if(winwidth < 768 -scrollbarwidth()){
                 $('.modal-arrow').click();
+        } 
+    });   
+
+     $(window).resize(function() {
+        var winwidth = $(window).outerWidth();
+        if(winwidth < 654 ){
+                $('.desktop-menu').css('display', 'none');
+        } 
+                else if(winwidth > 654 ){
+                $('.desktop-menu').css('display', 'flex');
         }
     });
 

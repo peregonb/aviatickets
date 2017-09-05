@@ -1,0 +1,197 @@
+*::-webkit-input-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+*:-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+*::-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+*:-ms-input-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {}
+
+body input:required:valid,
+body textarea:required:valid {}
+
+body {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 16px;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+    user-select: none;
+}
+header {
+    height: 65px;
+    padding: 0 !important;
+}
+.container-header {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    align-items: center;
+    height: 65px;
+    justify-content: space-between;
+}
+.header-brand {
+    color: #2f60eb;
+    font-size: 18px;
+    width: 65px;
+    font-style: italic;
+    font-weight: 600;
+    background-color: white;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    outline: none;
+}
+.main-menu-item {
+    color: #bfbfbf;
+    font-size: 10.5px;
+    font-weight: 400;
+    width: 80px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.main-menu-item {
+    background-image: url(../img/home.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: calc(50% - 7px);
+    height: 65px;
+width: 77px;
+}
+
+.search {
+    height: 33px;
+    padding: 0;
+    border-radius: 30px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    display: flex;
+    background-color: rgba(246, 246, 246, 0.73);
+    border: 1px solid #f1f1f1;
+}
+input[type="search"] {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    vertical-align: middle;
+    height: 15px;
+    width: 200px;
+    display: inline-flex;
+    padding: 8px 7px 8px 15px;
+    margin-bottom: 0;
+    background-color: rgba(246, 246, 246, 0.73);
+    color: #c8c8c8;
+    font-size: 12px;
+    font-weight: 300;
+    border-radius: 30px;
+}
+input[type="submit"] {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: 0;
+    border: none;
+    background: url(../img/zoom.png) no-repeat;
+    padding: 0;
+    background-position: center;
+    outline-style: none;
+    display: inline-block;
+    right: 0;
+}
+.link-cars {
+    padding-bottom: 5px;
+    line-height: 12px;
+    text-align: center;
+    background-image: url(../img/car.png);
+}
+.link-hotels{
+    background-image: url(../img/hotels.png);
+}
+.link-avia{
+    background-image: url(../img/boingh.png);
+}
+.link-home{
+    border-right: 1px solid #f1f1f1;
+}
+.link-avia{
+    border-left: 1px solid #f1f1f1;
+}
+.link-hotels{
+    border-left: 1px solid #f1f1f1;
+}
+.link-cars{
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+}
+.contact-link-tile{
+    display: flex;
+    flex-position:row;
+}
+.contact-image {
+    height: 65px;
+    width: 65px;
+    background-image: url(../img/ava.png);
+    background-size: contain;
+}
+.contact-name {
+    color: #ff8102;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px;
+    -webkit-background-clip: text;
+    background-image: -webkit-linear-gradient(left, rgb(47, 96, 235), rgb(255, 129, 2));
+    -webkit-text-fill-color: transparent;
+}
+.contact-tripledots {
+    width: 30px;
+    background-image: url(../img/dots.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.header-tile{
+    display: flex;
+    flex-direction:row;
+}
+.header-first-tile{
+    width: auto;
+}
+.header-second-tile{
+    width: auto;
+        display: flex;
+    -webkit-justify-content: flex-end;
+            justify-content: flex-end;
+}
+.header-third-tile{
+    width: auto;
+    display: flex;
+    -webkit-justify-content: flex-end;
+            justify-content: flex-end;
+}
+.bottom-menu {
+display: none;
+}

@@ -465,4 +465,31 @@ flex-flow: row;
     letter-spacing:normal;
     line-height: 29px;
 }
+.modal-header {
+    font-size: 12px;
+    height: 40px;
+}
+.br-modal{
+    display: block;
+}
+.modal-left {
+    padding: 15px 20px 15px 20px;
+    width: 100%;
+}
+.modal-left-social-stack {
+    height: 40px;
+}
+.reg {
+    display: block;
+    bottom: 45px;
+}
+.modal-footer-left {
+    left: -20px;
+    position: relative;
+    margin-top: -10px;
+}
+.modal-body {
+    height: 395px;
+    margin-top: -183px;
+}
 }

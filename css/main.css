@@ -1430,4 +1430,7 @@ form.modal-form {
     cursor: pointer;
     display: none;
 }
+.br-modal{
+    display: none;
+}
 /* END MODAL WINDOW*/

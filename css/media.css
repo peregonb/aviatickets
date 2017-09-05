@@ -276,6 +276,42 @@
 .footer-icons > ul > li:nth-child(1) {
     margin-left: 0;
 }
+.reg{
+    display: block;
+}
+.modal-body {
+    margin-left: -157.5px;
+        width: 315px;
+}
+.modal-left {
+    padding: 25px;
+    width: 100%;
+}
+.modal-footer-left {
+    top: 40px;
+    left: -25px;
+}
+.modal-footer {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.modal-footer-submit {
+    background-position-x: 228px;
+}
+.modal-body {
+    overflow: hidden;
+}
+.modal-right {
+    width: 100%;
+    padding: 25px;
+}
+.modal-header {
+    text-align: center;
+}
+.modal-content {
+flex-flow: row;
+}
+
 }
 @media only screen and (max-width: 532px) {
     .popular-content-image {
@@ -306,6 +342,9 @@
 .services-block {
     background: url(../img/bg4.png) 10% 176% no-repeat, url(../img/bg5.png) 50% 135% no-repeat, url(../img/plane5.png) top right/18% no-repeat, url(../img/plane4.png) bottom left/18% no-repeat;
     height: auto;
+}
+.modal-header {
+    text-align: center;
 }
 
 }

@@ -1399,6 +1399,35 @@ form.modal-form {
     padding-left: 25px;
     padding-right: 40px;
 }
-
-
+.reg {
+    color: #ff8102;
+    width: 100%;
+    cursor: pointer;
+    text-align: right;
+    font-size: 13px;
+    height: 30px;
+    font-weight: 600;
+    position: relative;
+    display: none;
+    position: relative;
+    bottom: 48px;
+}
+.slideOutLeft {
+    position: relative;
+    transition-timing-function: ease-in;
+    transition: 0.3s;
+    transform: translateX(-100%);
+}
+.modal-arrow {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 3px;
+    left: 5px;
+    background-image: url(../img/arrow-left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    display: none;
+}
 /* END MODAL WINDOW*/

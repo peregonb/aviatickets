@@ -11,6 +11,20 @@ var bodywidth = $('body').width();
  };
 
 
+$('.reg').click(function(){
+    $('.modal-left').addClass('slideOutLeft'), 300;
+    $('.modal-right').addClass('slideOutLeft'), 300;
+    $('.modal-arrow').show();
+});
+$('.modal-arrow').click(function(){
+    $(this).hide();
+    $('.modal-left').removeClass('slideOutLeft'), 300;
+    $('.modal-right').removeClass('slideOutLeft'), 300;
+    $('.modal-left').css('transition', '0.3s'), 300;
+    $('.modal-left').css('transition-timing-function', 'ease-out'), 300;
+    $('.modal-right').css('transition', '0.3s'), 300;
+    $('.modal-right').css('transition-timing-function', 'ease-out'), 300;
+});
 
 
 
@@ -70,6 +84,9 @@ $('.modal-cross').click(function() {
         } else if (winwidth < 992 - scrollbarWidth()) {
             $('.header-menu').css("display", "none");
             $('.hamburger').removeClass('is-active');
+        }
+        else if(winwidth < 768 -scrollbarwidth()){
+                $('.modal-arrow').click();
         }
     });
 

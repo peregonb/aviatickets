@@ -1287,7 +1287,7 @@ form.modal-form {
     color: #5c5c5c !important;
     font-size: 12px !important;
     font-weight: 400 !important;
-    margin-top: 7px !important;
+    margin-top: 4px !important;
 }
 
 .modal-input {
@@ -1432,5 +1432,8 @@ form.modal-form {
 }
 .br-modal{
     display: none;
+}
+.modal-footer-right {
+    margin-top: 4px;
 }
 /* END MODAL WINDOW*/

@@ -486,7 +486,7 @@ flex-flow: row;
 .modal-footer-left {
     left: -20px;
     position: relative;
-    margin-top: 0px;
+    margin-top: 6px;
 }
 .modal-body {
     height: 395px;
@@ -507,5 +507,11 @@ margin-top: 0;
 }
 .modal-label-left {
     margin-top: 7px !important;
+}
+.modal-label {
+    margin-top: 4px !important;
+}
+.modal-footer-right {
+    margin-top: 4px;
 }
 }

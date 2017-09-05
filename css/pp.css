@@ -195,3 +195,43 @@ input[type="submit"] {
 .bottom-menu {
 display: none;
 }
+.container.personal-information-block {
+    padding: 0;
+}
+.personal-information-tiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 20px 0 15px 0;
+}
+.personal-information-header {
+    color: #777;
+    font-size: 12px;
+    font-weight: 600;
+}
+.personal-information-content {
+    color: #2f60eb;
+    font-size: 20px;
+    font-weight: 600;
+}
+.personal-information-excerpt {
+    color: #bfbfbf;
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 12px;
+    background-image: url(../img/dot.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.personal-hr {
+    border-top: 5px solid #ff8102;
+    width: 65px;
+}
+.personal-hr:nth-child(1){
+float: left;
+}
+.personal-hr:nth-child(2) {
+    float: right;
+    margin-right: 37px;
+}

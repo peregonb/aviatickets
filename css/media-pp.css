@@ -30,7 +30,18 @@
     margin-right: 10px;
     cursor: pointer;
 }
-
+.personal-information-tile {
+    width: 33.333%;
+    padding-left: 35px;
+}
+.personal-hr:nth-child(2) {
+    float: right;
+    margin-right: calc(31% - 82px);
+}
+.personal-hr:nth-child(1) {
+    float: left;
+    margin-left: 35px;
+}
 }
 @media only screen and (max-width: 768px) {
 	
@@ -74,9 +85,11 @@
     background-position-y: 40%;
     padding-bottom: 2px;
 }
-.link-hotels.mobile-menu-item{
+.link-hotels.mobile-menu-item {
     background-image: url(../img/3.svg);
-    border:none;
+    border: none;
+    background-position-y: 40%;
+    background-size: 37%;
 }
 .link-avia.mobile-menu-item{
     background-image: url(../img/2.svg);
@@ -87,6 +100,18 @@
     border:none;
     
 }
+.personal-information-tile {
+    width: 50%;
+    padding-left: 30px;
+}
+.personal-hr:nth-child(2) {
+    float: right;
+    margin-right: calc(48% - 85px);
+}
+.personal-hr:nth-child(1) {
+    float: left;
+    margin-left: 30px;
+}
 }
 @media only screen and (max-width: 480px) {
 	input[type="search"] {
@@ -94,6 +119,27 @@
 }
 .search {
     width: 90%;
+}
+.personal-information-tile {
+    margin-bottom: 7px;
+    padding-left: 20px;
+}
+.personal-information-excerpt {
+    font-size: 10px;
+}
+.personal-information-content {
+    font-size: 15px;
+}
+.personal-information-header {
+    font-size: 10px;
+}
+.personal-hr:nth-child(2) {
+    float: right;
+    margin-right: calc(49% - 82px);
+}
+.personal-hr:nth-child(1) {
+    float: left;
+    margin-left: 20px;
 }
 }
 @media only screen and (max-width: 320px) {

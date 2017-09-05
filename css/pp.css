@@ -235,3 +235,10 @@ float: left;
     float: right;
     margin-right: 37px;
 }
+.personal-post-hr{
+    color: #777;
+font-size: 12px;
+font-weight: 600;
+width: 40%;
+border:none;
+}

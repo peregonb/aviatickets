@@ -21,7 +21,7 @@ $('.divTableCell').click(function(){
     $inputValue = $('.addedText').val();
     $(this).keypress(function(e) {
     if(e.which == 13) {
-        $(this).click().append($inputValue).removeClass('input-added').find('.addedText').remove();
+        $(this).click().append($inputValue).find('.addedText').remove();
     }
 });
 });

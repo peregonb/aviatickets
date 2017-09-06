@@ -291,7 +291,6 @@ font-weight: 600;
     box-shadow: 1.5px 2.6px 15px rgba(0, 0, 0, 0.13);
     height: auto;
     margin-top: 40px;
-    overflow-x: scroll;
     overflow-y: hidden;
 }
 
@@ -338,4 +337,41 @@ font-weight: 600;
 }
 .divTableCell:last-child{
     border: none;
+}
+
+/* конец таблицы */
+.table-notes-button-stack {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+}
+.table-notes-button {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.8;
+    border-radius: 4px;
+    padding: 7px;
+    cursor: pointer;
+}
+.table-notes-button1 {
+    background-color: #eb2f57;
+}
+.table-notes-button2 {
+    float: right;
+    margin-left: auto;
+    background-color: #25c25c;
+}
+input[type="text"] {
+    width: auto;
+    max-width: 70px;
+    border: 1px solid #eee;
+}
+.divTableRowAdded > .divTableCell:nth-child(2){
+    color: #ff8102;
+font-size: 12px;
+font-weight: 700;
+line-height: 19px;
+text-transform: uppercase;
 }

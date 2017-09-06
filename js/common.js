@@ -1,4 +1,46 @@
 $(document).ready(function() {
+
+
+$('.table-notes-button1').click(function(e){
+
+    var $newString = $('<div class="divTableRow divTableRowAdded"></div>');
+    var $newColumn = $('<div class="divTableCell">&nbsp;</div>');
+    var $newElements = $newColumn.clone();
+    for(var i = 1; i < 12; i++)
+    {
+        $newElements = $newColumn.add($newElements.clone());
+    }
+    $('.divTableBody').append($newString).find($newString).append($newElements);
+    e.preventDefault;
+
+    var $inputValue;
+$('.divTableCell').click(function(){
+    if( !$(this).hasClass('input-added') ){
+        $(this).addClass('input-added').append('<input type="text" class="addedText">');
+    }
+    $inputValue = $('.addedText').val();
+    $(this).keypress(function(e) {
+    if(e.which == 13) {
+        $(this).click().append($inputValue).removeClass('input-added').find('.addedText').remove();
+    }
+});
+});
+    
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var winwidth = $(window).outerWidth();
         if(winwidth < 654 ){
                 $('.desktop-menu').css('display', 'none');

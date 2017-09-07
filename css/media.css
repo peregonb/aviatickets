@@ -378,9 +378,12 @@ a.info-menu-item {
 .info-menu-item-img {
     position: relative;
     height: 25px !important;
-    margin: 0% !important;
+    margin: 0 auto !important;
     padding: 0 !important;
-    left: 45px;
+    left: 5px;
+}
+.header-menu>li:nth-child(1) {
+    width: 50px;
 }
 }
 

@@ -1,12 +1,25 @@
 $(document).ready(function() {
+$('.slidebar-menu').hide();
+$('.contact-tripledots').click(function(){
+    $('.slidebar-menu').animate({width:'toggle'},220);
+});
+$('.contact-image').click(function(){
+    $('.slidebar-menu').animate({width:'toggle'},220);
+});
 
-
+function containerMarginWidth(){
+var containerOuterWidth = $('.container').outerWidth(true);
+var containerWidth = $('.container').width();
+var containerMargin = (containerOuterWidth - containerWidth)/2;
+$('.slidebar-menu').css('right', containerMargin);
+}
+containerMarginWidth();
     $('.table-notes-button1').click(function(e) {
 
         var $newString = $('<div class="divTableRow divTableRowAdded"></div>');
         var $newColumn = $('<div class="divTableCell">&nbsp;</div>');
         var $newColumnFirst = $('<div class="divTableCell input-added divTableCellCheckbox"><input class="styled-checkbox" type="checkbox" id="check"><label for="check"></label></div>');
-        var $newColumnLast = $('<div class="divTableCell input-added divTableCellCross">&nbsp;</div>');
+        var $newColumnLast = $('<div class="divTableCell input-added divTableCellCross"><img src="./img/x.svg" class="closeX"></div>');
         var $newElements = $newColumn.clone();
         for (var i = 1; i < 10; i++) {
             $newElements = $newColumn.add($newElements.clone());
@@ -15,6 +28,9 @@ $(document).ready(function() {
         e.preventDefault;
 
         var $inputValue;
+        $('.closeX').click(function(){
+            $(this).parent().parent().remove();
+        });
         $('.divTableCell').click(function() {
             if (!$(this).hasClass('input-added')) {
                 $(this).addClass('input-added').append('<input type="text" class="addedText">');
@@ -152,6 +168,7 @@ $(document).ready(function() {
     });
 
     $(window).resize(function() {
+        containerMarginWidth();
         var winwidth = $(window).outerWidth();
         if (winwidth < 654) {
             $('.desktop-menu').css('display', 'none');

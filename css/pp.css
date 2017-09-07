@@ -449,6 +449,37 @@ text-transform: uppercase;
 .divTableCellCheckbox{
     width: 16px;
 }
-
-
+.divTableRowAdded {
+    transition: 300ms ease-in;
+}
 /*CHECKBOX END*/
+.container-slidebar {
+    padding: 0;
+    position: relative;
+}
+.slidebar-menu {
+    width: 100px;
+    height: 240px;
+    position: fixed;
+    top: 65px;
+    background-color: rgba(47, 96, 235, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.slidebar-menu-item-text {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+}
+.slidebar-menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.slidebar-menu-item:first-child {
+    margin-top: 40px;
+}

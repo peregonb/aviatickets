@@ -1437,3 +1437,11 @@ form.modal-form {
     margin-top: 7px;
 }
 /* END MODAL WINDOW*/
+.header-menu>li:hover {
+    border-bottom: 4px solid white;
+    border-left: 4px solid transparent;
+    -webkit-transition: 150ms;
+    -o-transition: 150ms;
+    transition: 150ms;
+}
+

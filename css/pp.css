@@ -375,3 +375,80 @@ font-weight: 700;
 line-height: 19px;
 text-transform: uppercase;
 }
+
+/*CHECKBOX START*/
+
+.styled-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.styled-checkbox+label {
+    position: relative;
+    cursor: pointer;
+    color: #343434;
+    font-size: 14px;
+    font-weight: 400;
+    width: 50%;
+    padding: 5px 0;
+}
+
+.styled-checkbox+label:before {
+    content: '';
+    display: inline-block;
+    vertical-align: text-top;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 20px;
+}
+
+.styled-checkbox:hover+label:before {
+    background: rgba(91, 204, 255, 0.5);
+}
+
+.styled-checkbox:focus+label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+.styled-checkbox:checked+label:before {
+    background: #5bccff;
+}
+
+.styled-checkbox:disabled+label {
+    color: #b8b8b8;
+    cursor: auto;
+}
+
+.styled-checkbox:disabled+label:before {
+    box-shadow: none;
+    background: #ddd;
+}
+
+.styled-checkbox:checked+label:after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 13px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.form-content-main-submit-checkbox-row {
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    flex-flow: row wrap;
+    padding: 15px 0px;
+}
+.divTableCellCheckbox{
+    width: 16px;
+}
+
+
+/*CHECKBOX END*/

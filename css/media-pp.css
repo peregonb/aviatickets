@@ -188,7 +188,12 @@
 .blue{
     font-size: 15px;
 }
+.table-notes-button {
+    font-size: 12px;
 }
-@media only screen and (max-width: 320px) {
-	
+}
+@media only screen and (max-width: 375px) {
+	.table-notes-button {
+    font-size: 10px;
+}
 }

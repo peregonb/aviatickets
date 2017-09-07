@@ -375,13 +375,12 @@ a.info-menu-item {
     width: 50px;
     position: relative;
 }
-img.info-menu-item-img {
-    position: absolute;
-}
 .info-menu-item-img {
-    padding: 0 !important;
-    margin: 0 !important;
+    position: relative;
     height: 25px !important;
+    margin: 0% !important;
+    padding: 0 !important;
+    left: 45px;
 }
 }
 
